@@ -1,12 +1,24 @@
-# SIT723UNIT_STOCK_-PREDICTION_AR_ARIMA_LSTM_LR-
-A stock price prediction research using Netflix and apple dataset
-For thsi work, Apple Inc dataset from 1980 till Jnuary 3023 represented the test for long term data to predict 30 days and 60 days price.
-Netflix stock data from 2020 Jan 1, till 30/12/2022 represented the test for short term data
-A further testing was done with a data of Netflix for just 6months ranging from 1/7/2022- 30/12/2022.
+STOCK_-PREDICTION_AR_ARIMA_LSTM_LR-
+
+Data is Netflix and Apple Inc
+Duration Apple 1/1/1980 - 19/1/2023
+Netflix is 1/1/2020-   30/12/2022 and 1/7/2033-30/12/2022
+
 Testing models are Autoregression, ARIMA( Autoregressive integrated Moving average
-, Linear regression and LSTM Long short term Memory.
-The motivation for this work lies in the combination of AR, ARIMA ,LR and LSTM models ina single research work. The choice of data length is to check if LSTM can predict future prices with lower error values when it train with short data length of less than two years (with a train percentage of 80: 20, where 20 is the test rate). We laso check how well ARIMA can predict future valkues of stock given two year data length. Same goes with AR and Linear regression models.
-The Research Question have been deducerd from the research problen thus research propblem relates to research Questions.
-The summary is that LSTM did not perform excellently well with reduction in data length. There were however higher improvement in training and reduced error results of RMSE, MAE and MSE with larger data top test while short term data of 2 years were poorer to long term data lengtgh. For a prediction of six months, the result of LSTM depreciates further which makes the summary that LSTM need more data length to train. Also with sequences, LSTM becomes complex as it does not do well with large sequences. 
-For Linear regression, the model struggles and we thereby conclude linear regression does not fit well with the data as we have negative error values.
-For AR and ARIMA, With large values, the RMSE and MSE are higher (Recall that for errors, the lesser error the better). AR and ARIMA models however had better results with lesser data length to train. The best results were observed for six month dataset for ARIMA .This work therefore conclude thgat ARIMA can only predict stock price with a maximum of six month data length for training. A minimum as low as 5 days is good but with two years ARIMA resuklts are not best. In all, LSTM seems to be the best hoewver we suggest a further research with the use of hybrid model (LSRM and dother model).
+                                  Linear regression and LSTM Long short term Memory.
+Train :Test rate is 80:20 
+p va;ues were higher than 0.05. Models were fitted.
+Prediction error metrics: RMSE, MSE, MAE and MAPE
+For error, the lower, the better.
+
+The summary is that LSTM did not perform excellently well with reduction in data length. 
+Large data trains well
+Sequence =50
+
+
+For a prediction of six months, the result of LSTM depreciates further which makes the summary that LSTM need more data length to train Apple data size was over 10375. 
+
+For Linear regression, large data are also great.
+
+For AR and ARIMA, AR and ARIMA models however had better results with lesser data length. The lesser results were observed for six month dataset for ARIMA.
+In all, LSTM seems to be the best hoewver we suggest a further research with the use of hybrid model ans a sentiment analysis alongside Data is suggested.
